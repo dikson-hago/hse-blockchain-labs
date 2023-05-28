@@ -1,5 +1,5 @@
 const main = async () => {
-    const initialSupply = ethers.utils.parseEther("100000");
+    const initialSupply = ethers.utils.parseEther("100");
 
     const [deployer] = await ethers.getSigners();
     console.log(`Address deploying the contract --> ${deployer.address}`);

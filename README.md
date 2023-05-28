@@ -1,8 +1,13 @@
-# hse-blockchain-labs
+# Task 1
 ## TransactionId перевода sepolia:
+```
 0x92377f3fb62136716b3690da08b6f3a2af4cbed7d45665036b5938105ff128d8
+```
 
-## Адрес смарт контракта
+## Адрес смарт контракта в Sepolia:
+```
+0x006A14DD85D5E7f81705fD5C55bdCf1000c81921
+```
 
 
 ## Ответы на вопросы:
