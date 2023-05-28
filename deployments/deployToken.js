@@ -1,11 +1,10 @@
 const main = async () => {
-    const initialSupply = ethers.utils.parseEther("100");
-
     const [deployer] = await ethers.getSigners();
     console.log(`Address deploying the contract --> ${deployer.address}`);
 
     const tokenFactory = await ethers.getContractFactory("Token");
-    const contract = await tokenFactory.deploy(initialSupply);
+    const contract = await tokenFactory.deploy();
+    await contract.deployed();
 
     console.log(`Token contract address --> ${contract.address}`);
 }
