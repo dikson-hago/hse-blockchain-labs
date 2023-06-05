@@ -1,7 +1,7 @@
 {
   "name": "hse-blockchain-labs",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Commit-reveal(ответ на вопрос): ``` Схема commit-reveal здесь нужна для того, чтобы можно было понять, только в самом конце, какой выбор сделал игрок, а до этого, информация о выборе оставалась в секрете. ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,9 +15,12 @@
     "chai": "^4.3.7",
     "ethereum-waffle": "^4.0.10",
     "ethers": "^5.7.2",
-    "hardhat": "^2.14.0"
+    "hardhat": "^2.14.1"
   },
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.1.4"
+  },
+  "directories": {
+    "test": "test"
   }
 }

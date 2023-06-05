@@ -2,7 +2,7 @@ const main = async () => {
     const [deployer] = await ethers.getSigners();
     console.log(`Address deploying the contract --> ${deployer.address}`);
 
-    const tokenFactory = await ethers.getContractFactory("Token");
+    const tokenFactory = await ethers.getContractFactory("ComRev");
     const contract = await tokenFactory.deploy();
     await contract.deployed();
 
