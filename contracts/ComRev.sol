@@ -12,12 +12,17 @@ contract ComRev {
     mapping(address => bytes32) public commits;
     mapping(uint => uint) public votes;
     bool votingStopped;
+    uint counter = 0;
+    mapping(uint => uint) public counterMap;
 
-    function commitVote(bytes32 _hashedVote) external {
+    function commitVote(bytes32 _hashedVote) public {
         require(!votingStopped);
         require(commits[msg.sender] == bytes32(0));
 
         commits[msg.sender] = _hashedVote;
+
+        counter++;
+        counterMap[0] = counter;
     }
 
     // open, who wins
