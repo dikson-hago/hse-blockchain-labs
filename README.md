@@ -1,4 +1,4 @@
-# Task-2
+# Task-2(Взаимодействие со СмК)
 
 ## Contract address in Sepolia
 ```
